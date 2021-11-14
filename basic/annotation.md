@@ -2,10 +2,10 @@
   
 __질문들, 순서__
 1. [annotation을 왜 사용하는가?](#link1)
-2. annotation을 어떻게 정의?
-3. annotation을 어떻게 적용하는가?
-4. annotation 정보를 불러오는 방법
-5. 더 알아볼것
+2. [annotation을 어떻게 정의?](#link2)
+3. [annotation을 어떻게 적용하는가?](#link3)
+4. [annotation 정보를 불러오는 방법](#link4)
+5. [더 알아볼것](#link5)
   
 ## 1. annotation을 사용하는 이유<a name="link1"></a>
 영문뜻은 `주석`이며 소스코드에 라벨을 붙이는 역할을 한다. 즉 소스의 정보를 표시하는것.  
@@ -18,7 +18,7 @@ __질문들, 순서__
 `@Override`는 상속받은 메서드를 오버라이드하는 메소드임을 알려주고,
 `@Deprecated`가 붙여진 메서드등을 사용할때에는 컴파일시 경고가 뜬다.
 
-## 2. annotation 정의 방법
+## 2. annotation 정의 방법<a name="link2"></a>
 ```java
 @Target(ElementType.[적용대상])
 @Retention(RetentionPolicy.[유지시기])
@@ -37,7 +37,7 @@ public @interface AnnotationName{
     * `RetentionPolicy.CLASS` - 클래스파일로 컴파일될때까지 유효
     * `RetentionPolicy.RUNTIME` - 런타임에도 유효. 즉, 계속 존재
     * `RetentionPolicy.SOURCE` - 소스파일에서만 유효.
-## 3. annotation 적용방법
+## 3. annotation 적용방법<a name="link3"></a>
 __class에 적용__
 ```java
 @AnnotationName(...)
@@ -54,7 +54,7 @@ __field에 적용__
 Object field;
 ```
   
-## 4. annotation 정보 조회하기
+## 4. annotation 정보 조회하기<a name="link4"></a>
 소스코드의 annotation정보를 불러오기위해선 `Reflection`을 이용해야한다.  
   
 __Annotation 조회 과정__
@@ -119,5 +119,5 @@ class Main{
 }
 ```
   
-## 5. 더 알아볼것.
+## 5. 더 알아볼것.<a name="link5"></a>
 * __reflection의 동작원리, 사용법등__
