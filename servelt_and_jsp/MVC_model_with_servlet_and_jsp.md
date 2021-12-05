@@ -28,6 +28,7 @@ public void do...(HttpServletRequest req, HttpServeltResponse res){
 
 ## 출처, 참고
 * [youtube: telusko](https://youtu.be/MDHj4vgKY6Q)
+* [youtube: jstl 소개](https://youtu.be/KmREMEhj5eE)
 ## 생각해보기
 * _model을 전달할때 어떤 방식으로 모델을 식별하고 저장하는것이 효율적일까?_
 * _Spring을 사용할때 편리해지는 부분들?_
